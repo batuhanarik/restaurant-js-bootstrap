@@ -1,0 +1,26 @@
+HTTrack3.49-2+htsswf+htsjava launched on Tue, 30 Jan 2024 15:30:03 at https://html.miraclestudio.design/majesty/index02.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "tr, en, *" https://html.miraclestudio.design/majesty/index02.html -O1 "C:\Users\batuhan.arik\Desktop\majesty" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+15:34:02	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/stylesheets/AjaxLoader.gif (from https://html.miraclestudio.design/majesty/stylesheets/owl.theme.css)
+15:34:02	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/img/poster.jpg (from https://html.miraclestudio.design/majesty/stylesheets/main.css)
+15:34:02	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/img/pattern.jpg (from https://html.miraclestudio.design/majesty/stylesheets/main.css)
+15:36:12	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/menu_tabs (from https://html.miraclestudio.design/majesty/index_cafe.html)
+15:36:12	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/shortcodes.html (from https://html.miraclestudio.design/majesty/clients.html)
+15:36:12	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/menu_grid.html (from https://html.miraclestudio.design/majesty/menu_masonry.html)
+15:36:12	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/index_01.html (from https://html.miraclestudio.design/majesty/shortcodes_alert_message.html)
+15:36:12	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/menu_single (from https://html.miraclestudio.design/majesty/shop_wishlist.html)
+15:36:12	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/boxed/stylesheets/AjaxLoader.gif (from https://html.miraclestudio.design/majesty/boxed/stylesheets/owl.theme.css)
+15:36:12	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/boxed/img/poster.jpg (from https://html.miraclestudio.design/majesty/boxed/stylesheets/main.css)
+15:36:12	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/boxed/menu_tabs (from https://html.miraclestudio.design/majesty/boxed/index_cafe.html)
+15:36:12	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/boxed/shortcodes.html (from https://html.miraclestudio.design/majesty/boxed/clients.html)
+15:36:12	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/boxed/menu_grid.html (from https://html.miraclestudio.design/majesty/boxed/menu_masonry.html)
+15:36:12	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/boxed/index_01.html (from https://html.miraclestudio.design/majesty/boxed/shortcodes_alert_message.html)
+15:36:12	Error: 	"Not Found" (404) at link https://html.miraclestudio.design/majesty/boxed/menu_single (from https://html.miraclestudio.design/majesty/boxed/shop_wishlist.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 6 minutes 9 seconds : 1039 links scanned, 1022 files written (92296008 bytes overall) [83322685 bytes received at 225806 bytes/sec], 10808658 bytes transferred using HTTP compression in 230 files, ratio 12%, 69.2 requests per connection
+(15 errors, 0 warnings, 0 messages)
