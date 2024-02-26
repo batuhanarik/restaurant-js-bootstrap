@@ -744,13 +744,14 @@ input:focus, textarea:focus {
 	position: relative;
 	-webkit-transition: all .5s;
 	transition: all .5s;
-	background-color: rgba(255,255,255,.95);
+	background-color: rgba(0,0,0,.95);
 	padding: 0;
 	z-index: 50;
 	box-shadow: 0 0 10px rgba(0,0,0,.1)
 }
 #header-sticky-wrapper.is-sticky #header #main-menu>ul>li>a, #header-sticky-wrapper.is-sticky #header #shop_cart>a>i {
-	color: #262626
+	/* color: #262626 */
+	color: white;
 }
 #header-sticky-wrapper.is-sticky #header #main-menu>ul>li.current>a, #header-sticky-wrapper.is-sticky #header #main-menu>ul>li>a:hover, #header-sticky-wrapper.is-sticky #header #shop_cart>a>i:hover {
 	color: #c59d5f
@@ -1035,6 +1036,7 @@ input:focus, textarea:focus {
 	border-right-color: rgba(0,0,0,.1)
 }
 #main-menu-trigger, #page-submenu-trigger {
+	color: white;
 	opacity: 0;
 	pointer-events: none;
 	cursor: pointer;

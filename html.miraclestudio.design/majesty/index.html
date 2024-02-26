@@ -64,8 +64,8 @@
   <div id="loader">
     <div class="loader-item">
       <span style="display: flex;align-items: center;">
-        <h1 style="color: #f5eade;">Welcome to</h1>
-          <img style="margin-left: 1rem;" width="170px" height="85px" src="img/logo_laf.png" alt="">
+        <h3 style="color: #f5eade;">Welcome to</h3>
+          <img style="margin-left: 0.8rem;margin-top: 1rem;" width="80" height="25" src="img/logo_laf.png" alt="Laf Bistro & Restaurant">
         </span>
       <div class="spinner">
         <div class="bounce1"></div>
@@ -122,7 +122,7 @@
                     ============================================= -->
           <nav id="main-menu" class="dark">
             <ul>
-              <li><a href="index01.html">
+              <li><a href="index.html">
                   <div>Home</div>
                 </a>
               </li>
@@ -272,118 +272,130 @@
         </div>
       </div>
       <!-- End menu today -->
-      <!-- Reservation
+          <!-- RESERVATION 
     ============================================= -->
-      <section id="intro-3" class="reservation dark text-center">
-        <!-- Bg Parallax -->
-        <div class="bcg background15" data-center="background-position: 50% 0px;"
-          data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;"
-          data-anchor-target="#intro-3">
-          <!-- Bg Transparent -->
-          <div class="bg-transparent padding-100">
-            <div class="container">
-              <div class="row">
-                <!-- Head Title -->
-                <div class="head_title">
-                  <i class="icon-intro"></i>
-                  <h1>RESERVATION</h1>
-                  <span class="welcome">Book your table</span>
-                </div>
-                <!-- End# Head Title -->
+    <section id="slide2-03" class="reservation dark home_2 text-center">
+      <!-- Bg Parallax -->
+      <div class="bcg background33" data-center="background-position: 50% 0px;"
+        data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;"
+        data-anchor-target="#slide2-03">
+        <!-- Bg Transparent -->
+        <div class="bg-transparent padding-100">
+          <div class="container">
+            <div class="row">
+              <!-- Head Title -->
+              <div class="head_title">
+                <i class="icon-intro"></i>
+                <h1>RESERVATION</h1>
+                <span class="welcome">Book your table</span>
+              </div>
+              <!-- End# Head Title -->
 
-                <!-- Reservation form -->
-                <form class="reserv_form" action="https://html.miraclestudio.design/majesty/reser-process.php"
-                  method="post">
-                  <!-- Form group -->
-                  <div class="form-group">
+              <!-- Reservation form style2-->
+              <form id="resForm" class="reserv_form reserv_style2">
+                <div class="row">
+                  <div class="col-md-6">
                     <div class="row">
-                      <div class="col-md-3 col-sm-6 col-sx-12 animated" data-animation="fadeInLeft"
-                        data-animation-delay="200">
-                        <input name="name2" class="form-control" type="text" placeholder="Your Name *" required>
-                      </div>
-                      <div class="col-md-3 col-sm-6 col-sx-12 animated" data-animation="fadeInLeft"
-                        data-animation-delay="400">
-                        <input name="email2" class="form-control" type="text" placeholder="Email">
-                      </div>
-                      <div class="col-md-3 col-sm-6 col-sx-12 animated" data-animation="fadeInLeft"
-                        data-animation-delay="600">
-                        <!-- Selct wrap -->
-                        <div class="select_wrap">
-                          <select class="form-control" name="occasion">
-                            <option value="one">Occasion *</option>
-                            <option value="d">One</option>
-                            <option value="two">Two</option>
-                            <option value="three">Three</option>
-                            <option value="four">Four</option>
-                            <option value="five">Five</option>
-                          </select>
+                      <!-- Form group -->
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6 col-sx-12">
+                            <input id="name" name="name" class="form-control" type="text" placeholder="Your Name *"
+                              required>
+                          </div>
+                          <div class="col-md-6 col-sm-6 col-sx-12">
+                            <input id="email" name="email" class="form-control" type="email" placeholder="email">
+                          </div>
                         </div>
-                        <!-- End select wrap -->
-                      </div>
-                      <div class="col-md-3 col-sm-6 col-sx-12 animated" data-animation="fadeInLeft"
-                        data-animation-delay="800">
-                        <!-- Selct wrap -->
-                        <div class="select_wrap">
-                          <select class="form-control" name="food">
-                            <option value="one">Preferred food *</option>
-                            <option value="d">One</option>
-                            <option value="two">Two</option>
-                            <option value="three">Three</option>
-                            <option value="four">Four</option>
-                            <option value="five">Five</option>
-                          </select>
+                        <!-- End form group -->
+                        <!-- Form Group -->
+                        <div class="form-group">
+                          <div class="row">
+
+                            <div class="col-md-6 col-sm-6 col-sx-12">
+                              <input id="personnum" name="personnum" class="form-control" type="text"
+                                placeholder="Number of Persons">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-sx-12">
+                              <input id="phone" name="phone" class="form-control" type="tel" placeholder="Phone No.">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-sx-12 datepicker">
+                              <input id="date" name="date" class="form-control" id="datetimepicker" placeholder="Date"
+                                type="text">
+                              <i class="fa fa-calendar"></i>
+                            </div>
+                          </div>
                         </div>
-                        <!-- End select wrap -->
+                        <!-- End form group -->
                       </div>
                     </div>
-                  </div>
-                  <!-- End form group -->
-                  <!-- form group -->
-                  <div class="form-group">
-                    <div class="row">
-                      <div class="col-md-3 col-sm-6 col-sx-12 animated" data-animation="fadeInLeft"
-                        data-animation-delay="1000">
-                        <input name="branch" class="form-control" type="text" placeholder="Branch Name *" required>
+                    <div class="col-md-6">
+                      <!-- form group -->
+                      <div class="form-group">
+                        <textarea class="col-md-6 col-sm-6 col-sx-12" style="width: 100rem;margin-left: -3rem;" id="comment" name="comment" placeholder="Message"></textarea>
                       </div>
-                      <div class="col-md-3 col-sm-6 col-sx-12 animated" data-animation="fadeInLeft"
-                        data-animation-delay="1200">
-                        <input name="personnum" class="form-control" type="text" placeholder="Number of Persons*">
-                      </div>
-                      <div class="col-md-3 col-sm-6 col-sx-12 animated" data-animation="fadeInLeft"
-                        data-animation-delay="1400">
-                        <input name="phone" class="form-control" type="tel" placeholder="Phone No*">
-                      </div>
-                      <div class="col-md-3 col-sm-6 col-sx-12 datepicker animated" data-animation="fadeInLeft"
-                        data-animation-delay="1600">
-                        <input name="date" class="form-control" id="datetimepicker" placeholder="Date" type="text">
-                        <i class="fa fa-calendar"></i>
-                      </div>
+                      <!-- End form group -->
                     </div>
                   </div>
-                  <!-- End form group -->
-                  <!-- Form group -->
-                  <div class="form-group animated" data-animation="fadeInLeft" data-animation-delay="1800">
-                    <textarea name="comment2" placeholder="Message"></textarea>
+               
                   </div>
-                  <!-- End form group -->
-                  <div class="loading2"></div>
-                  <button class="btn btn-gold white" name="submit" value="Send" id="reser-submit" type="submit">BOOK
-                    YOUR TABLE</button>
-                </form>
-                <!-- End reservation form -->
-                <div class="done2">
-                  <strong>Thank you!</strong> We have received your message.
-                </div>
-                <!-- End reservation form -->
+                  <div class="row element">
+                    <button style="display: block;width: 84%;margin-top:1.5rem;" onclick="sendEmail()" class="btn btn-gold white" name="submit" id="submitBtn"
+                      type="button">BOOK YOUR
+                      TABLE</button>
+              </form>
+              <script>
+                function sendEmail() {
 
+                  // Form verilerini al
+                  var templateParams = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    personnum: document.getElementById('personnum').value,
+                    phone: document.getElementById('phone').value,
+                    date: document.getElementById('date').value,
+                    comment: document.getElementById('comment').value
+                  };
+                  var data = {
+                    service_id: 'service_6loogxi',
+                    template_id: 'template_ablbdvr',
+                    user_id: 'sbdylNAb30gXo4xrL',
+                    template_params: templateParams
+                  };
+                  console.log(data)
+
+                  // EmailJS kullanarak e-posta gönderme
+                  $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+                    type: 'POST',
+                    data: JSON.stringify(data),
+                    contentType: 'application/json'
+                  }).then((res) => {
+                    console.log(res);
+                  }).done(function () {
+                    templateParams.name.value = "";
+                    templateParams.email.value = "";
+                    templateParams.personnum.value = "";
+                    templateParams.phone.value = "";
+                    templateParams.date.value = "";
+                    templateParams.comment.value = "";
+                    alert('Your mail is sent!');
+                  }).fail(function (error) {
+                    alert('Oops... ' + JSON.stringify(error));
+                  });
+                }
+              </script>
+
+              <!-- End reserv home -->
+              <div class="done2">
+                <strong>Thank you!</strong> We have received your message.
               </div>
             </div>
           </div>
           <!-- End bg transparent -->
         </div>
         <!-- End Bg Parallax -->
-      </section>
-      <!-- End Reservation -->
+    </section>
+    <!-- End RESERVATION -->
       <!-- Our menu
     ============================================= -->
       <section style="background-color: #f5eade" class="padding-100 our_menu">
@@ -805,8 +817,8 @@
                 <!-- End video source -->
                 <!-- Text video center -->
                 <div class="col-md-7 text-center">
-                  <h1 class="">MAJESTY IN VIDEO</h1>
-                  <b>You can add all videos format</b>
+                  <h1 class="">LAF IN VIDEO</h1>
+                  <b>Laf Bistro & Restaurant Introduction</b>
                   <p class="italic mt40">Nulla facilisi. Nunc id mi enim. Phasellus tortor nisl, auctor id elit congue,
                     consectetur pharetra leo. Suspendisse eu libero nunc. Phasellus at justo ut lorem semper fringilla.
                     Ut tincidunt, odio sit amet pellentesque venenatis, felis erat pulvinar enim, eu tristique mi lectus
