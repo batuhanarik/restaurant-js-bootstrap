@@ -202,8 +202,8 @@
             <!-- Head Title -->
             <div class="head_title">
               <i class="icon-intro"></i>
-              <h1>Send Message</h1>
-              <span class="welcome">Keep in Touch</span>
+              <h1>Laf Bistro & Restaurant</h1>
+              <span class="welcome">You can share your requests, complaints and suggestions with us.</span>
             </div>
             <!-- End# Head Title -->
             <!-- Contact form -->
@@ -215,21 +215,21 @@
                     <div class="col-md-4 col-sm-4 col-sx-12">
                       <!-- Element -->
                       <div class="element">
-                        <input type="text" name="name" class="form-control text" placeholder="Name *" />
+                        <input type="text" id="name" name="name" class="form-control text" placeholder="Name *" />
                       </div>
                       <!-- End Element -->
                     </div>
                     <div class="col-md-4 col-sm-4 col-sx-12">
                       <!-- Element -->
                       <div class="element">
-                        <input type="text" name="email" class="form-control text" placeholder="E-mail *" />
+                        <input type="text" id="email" name="email" class="form-control text" placeholder="E-mail *" />
                       </div>
                       <!-- End Element -->
                     </div>
                     <div class="col-md-4 col-sm-4 col-sx-12">
                       <!-- Element -->
                       <div class="element">
-                        <input type="text" name="website" class="form-control text" placeholder="Website" />
+                        <input id="phone" type="text" name="phone" class="form-control text" placeholder="Phone Number" />
                       </div>
                       <!-- End Element -->
                     </div>
@@ -245,7 +245,7 @@
                         <div>
                           <!-- Element -->
                           <div class="element">
-                            <textarea name="comment" class="text textarea" placeholder="Message *"></textarea>
+                            <textarea id="comment" name="comment" class="text textarea" placeholder="Message *"></textarea>
                           </div>
                           <!-- End Element -->
                         </div>
@@ -257,11 +257,47 @@
                 </div>
                 <!-- Element -->
                 <div class="element">
-                  <button type="submit" id="submit" value="Send" class="btn btn-black">Send</button>
+                  <button type="button" id="msgBtn" value="Send" class="btn btn-black" onclick="sendEmail()">Send</button>
                   <div class="loading"></div>
                 </div>
                 <!-- End Element -->
               </form>
+              <script>
+                function sendEmail() {
+
+                  // Form verilerini al
+                  var templateParams = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    comment: document.getElementById('comment').value
+                  };
+                  var data = {
+                    service_id: 'service_6loogxi',
+                    template_id: 'template_hss6iu7',
+                    user_id: 'sbdylNAb30gXo4xrL',
+                    template_params: templateParams
+                  };
+                  console.log(data)
+
+                  // EmailJS kullanarak e-posta gönderme
+                  $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+                    type: 'POST',
+                    data: JSON.stringify(data),
+                    contentType: 'application/json'
+                  }).then((res) => {
+                    console.log(res);
+                  }).done(function () {
+                    templateParams.name.value = "";
+                    templateParams.email.value = "";
+                    templateParams.phone.value = "";
+                    templateParams.comment.value = "";
+                    alert('Your mail is sent!');
+                  }).fail(function (error) {
+                    alert('Oops... ' + JSON.stringify(error));
+                  });
+                }
+              </script>
               <div class="done">
                 <strong>Thank you!</strong> We have received your message.
               </div>
