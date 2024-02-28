@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
   <!-- Meta Tags
@@ -50,20 +50,20 @@
   <link href="stylesheets/main.css" rel="stylesheet">
   <!-- Main Template Responsive Styles -->
   <link href="stylesheets/main-responsive.css" rel="stylesheet">
-  <!--[if lt IE 9]>
-      <script src="javascripts/libs/html5shiv.js"></script>
-      <script src="javascripts/libs/respond.min.js"></script>
-    <![endif]-->
+
 </head>
 
 <body>
   <!-- Loader
     ============================================= -->
   <div id="loader">
-    <div class="loader-item">
-      <span style="display: flex;align-items: center;">
-        <h3 style="color: black;font-weight: 700;">Welcome to</h3>
-        <img style="margin-left: 0.8rem;margin-top: 1rem;" width="100" height="35" src="img/logo_laf.png"
+    <div class="loader-item loader-laf-container" >
+      <span style="display: flex;align-items: center;width: 100%;text-align: center;justify-content: center;">
+        <h5 class="loader-laf-h3" style="color: black;font-weight: 800;margin-top: 2.8rem;margin-left: 0.1rem;margin-right: 1rem;">Welcome to
+        </h5>
+        <img
+        class="loader-laf-img" 
+        style="margin-left: 0.8rem;margin-top: 1rem;width: 25vw;height: 5vh;" height="40" src="img/logo_laf.png"
           alt="Laf Bistro & Restaurant">
       </span>
       <div class="spinner">
@@ -77,7 +77,7 @@
   <!-- End Loader -->
   <!-- Document Wrapper
     ============================================= -->
-  <div id="wrapper">
+  <div style="overflow: hidden;" id="wrapper">
     <!-- Zooming Slider
     ============================================= -->
     <section id="home-header" class="zooming-slider dark fullheight">
@@ -113,9 +113,10 @@
           <div id="main-menu-trigger"><i class="fa fa-bars"></i></div>
           <!-- Logo
                     ============================================= -->
-          <div id="logo"> <a href="index.html" class="light-logo"><img style="margin-top: 1.5rem;" width="120"
-                height="40" src="img/logo_laf.png" alt="Logo"></a> <a href="index.html" class="dark-logo"><img
-                height="40" width="120" src="img/logo_laf.png" alt="Logo"></a> </div>
+          <div id="logo"> 
+            <a href="index.html" class="light-logo"><img style="margin-top: 1.5rem;" width="100"
+                height="40" src="img/logo_laf.png" alt="Logo"></a> <a href="index.html" class="dark-logo">
+              <img height="40" width="100" src="img/logo_laf.png" alt="Logo"></a> </div>
           <!--End #logo  -->
           <!-- Primary Navigation
                     ============================================= -->
@@ -205,7 +206,7 @@
                 <!-- Reservation form style2-->
                 <form id="resForm" class="reserv_form reserv_style2">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-10">
                       <div class="row">
                         <!-- Form group -->
                         <div class="form-group">
@@ -235,25 +236,21 @@
                                   type="text">
                                 <i class="fa fa-calendar"></i>
                               </div>
+                              <div class="col-md-6 col-sm-6 col-sx-12">
+                                <textarea style="width: 100%;min-height: 2.4rem;" class="col-md-6 col-sm-6 col-sx-12"
+                                  id="comment" name="comment" placeholder="Message"></textarea>
+                              </div>
                             </div>
                           </div>
                           <!-- End form group -->
                         </div>
                       </div>
-                      <div class="col-md-6">
-                        <!-- form group -->
-                        <div class="form-group">
-                          <textarea class="col-md-6 col-sm-6 col-sx-12" style="width: 100rem;margin-left: -3rem;"
-                            id="comment" name="comment" placeholder="Message"></textarea>
-                        </div>
-                        <!-- End form group -->
-                      </div>
                     </div>
 
                   </div>
                   <div class="row element">
-                    <button style="display: block;width: 84%;margin-top:1.5rem;" onclick="sendEmail()"
-                      class="btn btn-gold white" name="submit" id="submitBtn" type="button">BOOK YOUR
+                    <button style="display: block;margin-top:1.5rem;" onclick="sendEmail()" class="btn btn-gold white"
+                      name="submit" id="submitBtn" type="button">BOOK YOUR
                       TABLE</button>
                 </form>
                 <script>
@@ -290,9 +287,9 @@
                       templateParams.phone.value = "";
                       templateParams.date.value = "";
                       templateParams.comment.value = "";
-                      alert('Your mail is sent!');
+                      alert('Your reservation request mail is sent!');
                     }).fail(function (error) {
-                      alert('Oops... ' + JSON.stringify(error));
+                      alert('Oops... Something went wrong :(');
                     });
                   }
                 </script>
@@ -364,395 +361,66 @@
 
       <!-- Our menu
     ============================================= -->
-      <section style="background-color: #f5eade" class="padding-100 our_menu">
+      <!-- <section style="background-color: #f5eade" class="padding-100 our_menu">
         <div class="container">
           <div class="row">
-            <!-- Head Title -->
             <div class="head_title">
               <i class="icon-intro"></i>
               <h1>OUR MENU</h1>
               <span class="welcome">Choose & Taste</span>
             </div>
-            <!-- End# Head Title -->
 
-            <!-- Menu Tabs -->
             <div class="menu_tabs">
               <div class="row">
-                <!-- Our menu tab container  -->
                 <div class="col-md-12 col-md-12 col-sm-12 col-xs-12 our-menu-tab-container">
-                  <!-- Tab menu -->
                   <div class="col-md-2 col-sm-3 col-xs-12 tab-menu">
                     <div class="list-group"> <a href="#" class="list-group-item active text-center"> STARTERS </a> <a
                         href="#" class="list-group-item text-center"> DISHES </a> <a href="#"
                         class="list-group-item text-center"> DESERT </a> <a href="#"
                         class="list-group-item text-center"> DRINKS </a> </div>
                   </div>
-                  <!-- Tab menu -->
-                  <!-- Our Menu Tabs -->
                   <div class="col-md-10 col-sm-9 col-xs-12 our-menu-tabs">
-                    <!-- Tab content  -->
                     <div class="tab-content active">
-                      <!-- Our Menu Slider -->
                       <div class="our-menu-slider">
-                        <!-- Item -->
                         <div class="item"> <img class="lazyOwl" src="img/menu/menu_home_1/starter_1.jpg"
                             alt="Food menu">
-                          <!-- Item Description -->
                           <div class="item_desc">
                             <h3>Starter Name <span class="price pull-right">$28.99</span></h3>
-                            <!-- Rating -->
                             <fieldset class="rating">
                               <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
                                   class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
                               <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
                             </fieldset>
-                            <!-- End rating -->
                             <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
                             <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
                                   class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
                                 href="menu_single.html"><i class="fa fa-link"></i></a> </div>
                           </div>
-                          <!-- End item description -->
                         </div>
-                        <!-- End item -->
-                        <!-- Item -->
                         <div class="item"><img class="lazyOwl" src="img/menu/menu_home_1/starter_2.jpg" alt="Food menu">
-                          <!-- Item description -->
                           <div class="item_desc">
                             <h3>Starter Name <span class="price pull-right">$28.99</span></h3>
-                            <!-- Rating -->
                             <fieldset class="rating">
                               <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
                                   class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
                               <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
                             </fieldset>
-                            <!-- End rating -->
                             <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
                             <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
                                   class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
                                 href="menu_single.html"><i class="fa fa-link"></i></a> </div>
                           </div>
-                          <!-- End item description -->
-                        </div>
-                        <!-- Item -->
-                        <div class="item"><img class="lazyOwl" src="img/menu/menu_home_1/starter_3.jpg" alt="Food menu">
-                          <!-- Item description -->
-                          <div class="item_desc">
-                            <h3>Starter Name <span class="price pull-right">$28.99</span></h3>
-                            <!-- Rating -->
-                            <fieldset class="rating">
-                              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
-                                  class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
-                            </fieldset>
-                            <!-- End rating -->
-                            <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
-                            <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
-                                  class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
-                                href="menu_single.html"><i class="fa fa-link"></i></a> </div>
-                          </div>
-                          <!-- End item description -->
-                        </div>
-                        <!-- Item -->
-                        <div class="item"><img class="lazyOwl" src="img/menu/menu_home_1/starter_4.jpg" alt="Food menu">
-                          <!-- Item description -->
-                          <div class="item_desc">
-                            <h3>Starter Name <span class="price pull-right">$28.99</span></h3>
-                            <!-- Rating -->
-                            <fieldset class="rating">
-                              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
-                                  class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
-                            </fieldset>
-                            <!-- End rating -->
-                            <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
-                            <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
-                                  class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
-                                href="menu_single.html"><i class="fa fa-link"></i></a> </div>
-                          </div>
-                          <!-- End item description -->
                         </div>
                       </div>
-                      <!-- End our menu slider -->
-                      <a href="our_menu.html" class="view_all btn btn-gold ">View All Products </a>
-                    </div>
-                    <!-- End Tab content -->
-                    <!-- Tab content  -->
-                    <div class="tab-content">
-                      <!-- Our Menu Slider -->
-                      <div class="our-menu-slider">
-                        <!-- Item -->
-                        <div class="item"><img class="lazyOwl" src="img/menu/menu_home_1/dishes_1.jpg" alt="Food menu">
-                          <!-- Item description -->
-                          <div class="item_desc">
-                            <h3>Dish Name <span class="price pull-right">$28.99</span></h3>
-                            <!-- Rating -->
-                            <fieldset class="rating">
-                              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
-                                  class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
-                            </fieldset>
-                            <!-- End rating -->
-                            <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
-                            <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
-                                  class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
-                                href="menu_single.html"><i class="fa fa-link"></i></a> </div>
-                          </div>
-                          <!-- End item description -->
-                        </div>
-                        <!-- End Item -->
-                        <!-- Item -->
-                        <div class="item"><img class="lazyOwl" src="img/menu/menu_home_1/dishes_2.jpg" alt="Food menu">
-                          <!-- Item Description -->
-                          <div class="item_desc">
-                            <h3>Dish Name <span class="price pull-right">$28.99</span></h3>
-                            <!-- Rating -->
-                            <fieldset class="rating">
-                              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
-                                  class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
-                            </fieldset>
-                            <!-- End rating -->
-                            <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
-                            <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
-                                  class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
-                                href="menu_single.html"><i class="fa fa-link"></i></a> </div>
-                          </div>
-                          <!-- End item description -->
-                        </div>
-                        <!-- End Item -->
-                        <!-- Item -->
-                        <div class="item"><img class="lazyOwl" src="img/menu/menu_home_1/dishes_3.jpg" alt="Food menu">
-                          <div class="item_desc">
-                            <h3>Dish Name <span class="price pull-right">$28.99</span></h3>
-                            <!-- Rating -->
-                            <fieldset class="rating">
-                              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
-                                  class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
-                            </fieldset>
-                            <!-- End rating -->
-                            <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
-                            <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
-                                  class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
-                                href="menu_single.html"><i class="fa fa-link"></i></a> </div>
-                          </div>
-                          <!-- End item description -->
-                        </div>
-                        <!-- End Item -->
-                        <!-- Item -->
-                        <div class="item"><img class="lazyOwl" src="img/menu/menu_home_1/dishes_4.jpg" alt="Food menu">
-                          <!-- Item Description -->
-                          <div class="item_desc">
-                            <h3>Dish Name <span class="price pull-right">$28.99</span></h3>
-                            <!-- Rating -->
-                            <fieldset class="rating">
-                              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
-                                  class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
-                            </fieldset>
-                            <!-- End rating -->
-                            <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
-                            <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
-                                  class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
-                                href="menu_single.html"><i class="fa fa-link"></i></a> </div>
-                          </div>
-                          <!-- End item description -->
-                        </div>
-                        <!-- End Item -->
-                      </div>
-                      <!-- End our menu slider -->
-                      <a href="our_menu.html" class="view_all btn btn-gold">View All Dishes</a>
-                    </div>
-                    <!-- End Tab content  -->
-                    <!-- Tab content -->
-                    <div class="tab-content">
-                      <!-- Our Menu slider -->
-                      <div class="our-menu-slider">
-                        <!-- Item -->
-                        <div class="item"> <img class="lazyOwl" src="img/menu/menu_home_1/desert_1.jpg" alt="Food menu">
-                          <!-- Item Description -->
-                          <div class="item_desc">
-                            <h3>Desert Name <span class="price pull-right">282.99 $</span></h3>
-                            <!-- Rating -->
-                            <fieldset class="rating">
-                              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
-                                  class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
-                            </fieldset>
-                            <!-- End rating -->
-                            <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
-                            <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
-                                  class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
-                                href="menu_single.html"><i class="fa fa-link"></i></a> </div>
-                          </div>
-                          <!-- End item description -->
-                        </div>
-                        <!-- End item -->
-                        <!-- Item -->
-                        <div class="item"> <img class="lazyOwl" src="img/menu/menu_home_1/desert_2.jpg" alt="Food menu">
-                          <!-- Item Description -->
-                          <div class="item_desc">
-                            <h3>Desert Name <span class="price pull-right">282.99 $</span></h3>
-                            <!-- Rating -->
-                            <fieldset class="rating">
-                              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
-                                  class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
-                            </fieldset>
-                            <!-- End rating -->
-                            <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
-                            <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
-                                  class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
-                                href="menu_single.html"><i class="fa fa-link"></i></a> </div>
-                          </div>
-                          <!-- End item description -->
-                        </div>
-                        <!-- End item -->
-                        <!-- Item -->
-                        <div class="item"> <img class="lazyOwl" src="img/menu/menu_home_1/desert_3.jpg" alt="Food menu">
-                          <!-- Item description -->
-                          <div class="item_desc">
-                            <h3>Desert Name <span class="price pull-right">282.99 $</span></h3>
-                            <!-- Rating -->
-                            <fieldset class="rating">
-                              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
-                                  class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
-                            </fieldset>
-                            <!-- End rating -->
-                            <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
-                            <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
-                                  class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
-                                href="menu_single.html"><i class="fa fa-link"></i></a> </div>
-                          </div>
-                          <!-- End item description -->
-                        </div>
-                        <!-- End item -->
-                        <!-- Item -->
-                        <div class="item"> <img class="lazyOwl" src="img/menu/menu_home_1/desert_4.jpg" alt="Food menu">
-                          <!-- Item description-->
-                          <div class="item_desc">
-                            <h3>Desert Name <span class="price pull-right">282.99 $</span></h3>
-                            <!-- Rating -->
-                            <fieldset class="rating">
-                              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
-                                  class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
-                            </fieldset>
-                            <!-- End rating -->
-                            <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
-                            <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
-                                  class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
-                                href="menu_single.html"><i class="fa fa-link"></i></a> </div>
-                          </div>
-                          <!-- End item description -->
-                        </div>
-                        <!-- End item -->
-                      </div>
-                      <!-- End menu slider -->
-                      <a href="our_menu.html" class="view_all btn btn-gold">View All Desert</a>
-                    </div>
-                    <!-- Tab content -->
-                    <!-- Tab content -->
-                    <div class="tab-content">
-                      <!-- Our menu slider -->
-                      <div class="our-menu-slider">
-                        <!-- Item -->
-                        <div class="item"> <img class="lazyOwl" src="img/menu/menu_home_1/drinks_1.jpg" alt="Food menu">
-                          <!-- Item Description -->
-                          <div class="item_desc">
-                            <h3>Drink Name <span class="price pull-right">282.99 $</span></h3>
-                            <!-- Rating -->
-                            <fieldset class="rating">
-                              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
-                                  class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
-                            </fieldset>
-                            <!-- End rating -->
-                            <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
-                            <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
-                                  class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
-                                href="menu_single.html"><i class="fa fa-link"></i></a> </div>
-                          </div>
-                          <!-- End item description -->
-                        </div>
-                        <!-- End item -->
-                        <!-- Item -->
-                        <div class="item"> <img class="lazyOwl" src="img/menu/menu_home_1/drinks_2.jpg" alt="Food menu">
-                          <!-- Item Description -->
-                          <div class="item_desc">
-                            <h3>Drink Name <span class="price pull-right">282.99 $</span></h3>
-                            <!-- Rating -->
-                            <fieldset class="rating">
-                              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
-                                  class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
-                            </fieldset>
-                            <!-- End rating -->
-                            <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
-                            <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
-                                  class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
-                                href="menu_single.html"><i class="fa fa-link"></i></a> </div>
-                          </div>
-                          <!-- End item description -->
-                        </div>
-                        <!-- End item -->
-                        <!-- Item -->
-                        <div class="item"> <img class="lazyOwl" src="img/menu/menu_home_1/drinks_3.jpg" alt="Food menu">
-                          <!-- Item Description -->
-                          <div class="item_desc">
-                            <h3>Drink Name <span class="price pull-right">282.99 $</span></h3>
-                            <!-- Rating -->
-                            <fieldset class="rating">
-                              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
-                                  class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
-                            </fieldset>
-                            <!-- End rating -->
-                            <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
-                            <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
-                                  class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
-                                href="menu_single.html"><i class="fa fa-link"></i></a> </div>
-                          </div>
-                          <!-- End item description -->
-                        </div>
-                        <!-- End item -->
-                        <!-- Item -->
-                        <div class="item"> <img class="lazyOwl" src="img/menu/menu_home_1/drinks_4.jpg" alt="Food menu">
-                          <!-- Item Discription -->
-                          <div class="item_desc">
-                            <h3>Drink Name <span class="price pull-right">282.99 $</span></h3>
-                            <!-- Rating -->
-                            <fieldset class="rating">
-                              <span class="active"><i class="fa fa-star"></i></span> <span class="active"><i
-                                  class="fa fa-star"></i></span> <span class="active"><i class="fa fa-star"></i></span>
-                              <span><i class="fa fa-star"></i></span> <span><i class="fa fa-star"></i></span>
-                            </fieldset>
-                            <!-- End rating -->
-                            <p>Aenean commodo ligula eget dolor enean massa. Cum sociis natoque penatibus.</p>
-                            <div class="form-group buttons"> <a class="btn btn-gold" href="#"><i
-                                  class="fa fa-shopping-cart"></i></a> <a class="btn btn-gold"
-                                href="menu_single.html"><i class="fa fa-link"></i></a> </div>
-                          </div>
-                          <!-- End item description -->
-                        </div>
-                        <!-- End item -->
-                      </div>
-                      <!-- End menu slider -->
                       <a href="our_menu.html" class="view_all btn btn-gold">View All Drinks</a>
                     </div>
-                    <!-- Tab content -->
                   </div>
-                  <!-- End Our Menu Tabs -->
                 </div>
-                <!-- End Our menu tab container -->
               </div>
             </div>
-            <!-- End Menu Tabs  -->
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- End our menu -->
       <!-- Video 
     ============================================= -->
@@ -884,4 +552,5 @@
     <!-- For This Pgae Only Zooming slider -->
     <script src="javascripts/custom/mbBgGallery_init.js"></script>
 </body>
+
 </html>

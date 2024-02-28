@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from html.miraclestudio.design/majesty/reservation.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 30 Jan 2024 12:33:12 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <head>
   <!-- Meta Tags
@@ -60,14 +57,15 @@
 </head>
 
 <body>
-  <!-- Loader
+   <!-- Loader
     ============================================= -->
     <div id="loader">
       <div class="loader-item">
-        <span style="display: flex;align-items: center;">
-          <h3 style="color: #f5eade;">Welcome to</h3>
-            <img style="margin-left: 0.8rem;margin-top: 1rem;" width="80" height="25" src="img/logo_laf.png" alt="Laf Bistro & Restaurant">
-          </span>
+        <span style="display: flex;align-items: center;width: 100%;text-align: center;justify-content: center;">
+          <h3 style="color: black;font-weight: 800;margin-top: 2.8rem;margin-left: 0.1rem;margin-right: 1rem;">Welcome   to  </h3>
+          <img style="margin-left: 0.8rem;margin-top: 1rem;width: 30vw;height: 5vh;" height="40" src="img/logo_laf.png"
+            alt="Laf Bistro & Restaurant">
+        </span>
         <div class="spinner">
           <div class="bounce1"></div>
           <div class="bounce2"></div>
@@ -79,7 +77,7 @@
     <!-- End Loader -->
   <!-- Document Wrapper
     ============================================= -->
-  <div id="wrapper">
+  <div style="overflow: hidden;" id="wrapper">
     <!-- banner 
     ============================================= -->
     <section class="banner dark">
@@ -110,17 +108,19 @@
       <!-- Service parallax -->
     </section>
     <!-- End Banner -->
-    <!-- Header ============================================= -->
+  <!-- Header
+    ============================================= -->
     <header id="header" class="header-transparent">
       <div class="container">
         <div class="row">
           <div id="main-menu-trigger"><i class="fa fa-bars"></i></div>
-          <!-- Logo
+    <!-- Logo
                     ============================================= -->
-          <div id="logo"> <a href="index.html" class="light-logo"><img style="margin-top: 1.5rem;" width="120"
-                height="40" src="img/logo_laf.png" alt="Logo"></a> <a href="index.html" class="dark-logo"><img
-                height="40" width="120" src="img/logo_laf_dark.png" alt="Logo"></a> </div>
-          <!--End #logo  -->
+                    <div id="logo"> 
+                      <a href="index.html" class="light-logo"><img style="margin-top: 1.5rem;" width="100"
+                          height="40" src="img/logo_laf.png" alt="Logo"></a> <a href="index.html" class="dark-logo">
+                        <img height="40" width="100" src="img/logo_laf.png" alt="Logo"></a> </div>
+                    <!--End #logo  -->
           <!-- Primary Navigation
                     ============================================= -->
           <nav id="main-menu" class="dark">
@@ -129,7 +129,7 @@
                   <div>Home</div>
                 </a>
               </li>
-              <li class="mega-menu"><a href="menu_gird.html">
+              <li class="mega-menu"><a href="our_menu.html">
                   <div>Menu</div>
                 </a>
               </li>
@@ -154,7 +154,7 @@
         </div>
       </div>
     </header>
-    <!-- End header -->
+    <!-- End Header Transparent -->
     <div id="content">
       <!-- Food Date blocks
     ============================================= -->
@@ -197,130 +197,125 @@
         </div>
       </section>
       <!-- End date blocks-->
-      <!-- RESERVATION 
+       <!-- RESERVATION 
     ============================================= -->
-      <section id="slide2-03" class="reservation dark home_2 text-center">
-        <!-- Bg Parallax -->
-        <div class="bcg background33" data-center="background-position: 50% 0px;"
-          data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;"
-          data-anchor-target="#slide2-03">
-          <!-- Bg Transparent -->
-          <div class="bg-transparent padding-100">
-            <div class="container">
-              <div class="row">
-                <!-- Head Title -->
-                <div class="head_title">
-                  <i class="icon-intro"></i>
-                  <h1>RESERVATION</h1>
-                  <span class="welcome">Book your table</span>
-                </div>
-                <!-- End# Head Title -->
+    <section id="slide2-03" class="reservation dark home_2 text-center">
+      <!-- Bg Parallax -->
+      <div class="bcg background33" data-center="background-position: 50% 0px;"
+        data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;"
+        data-anchor-target="#slide2-03">
+        <!-- Bg Transparent -->
+        <div class="bg-transparent padding-100">
+          <div class="container">
+            <div class="row">
+              <!-- Head Title -->
+              <div class="head_title">
+                <i class="icon-intro"></i>
+                <h1>RESERVATION</h1>
+                <span class="welcome">Book your table</span>
+              </div>
+              <!-- End# Head Title -->
 
-                <!-- Reservation form style2-->
-                <form id="resForm" class="reserv_form reserv_style2">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="row">
-                        <!-- Form group -->
+              <!-- Reservation form style2-->
+              <form id="resForm" class="reserv_form reserv_style2">
+                <div class="row">
+                  <div class="col-md-10">
+                    <div class="row">
+                      <!-- Form group -->
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-6 col-sm-6 col-sx-12">
+                            <input id="name" name="name" class="form-control" type="text" placeholder="Your Name *"
+                              required>
+                          </div>
+                          <div class="col-md-6 col-sm-6 col-sx-12">
+                            <input id="email" name="email" class="form-control" type="email" placeholder="email">
+                          </div>
+                        </div>
+                        <!-- End form group -->
+                        <!-- Form Group -->
                         <div class="form-group">
                           <div class="row">
-                            <div class="col-md-6 col-sm-6 col-sx-12">
-                              <input id="name" name="name" class="form-control" type="text" placeholder="Your Name *"
-                                required>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-sx-12">
-                              <input id="email" name="email" class="form-control" type="email" placeholder="email">
-                            </div>
-                          </div>
-                          <!-- End form group -->
-                          <!-- Form Group -->
-                          <div class="form-group">
-                            <div class="row">
 
-                              <div class="col-md-6 col-sm-6 col-sx-12">
-                                <input id="personnum" name="personnum" class="form-control" type="text"
-                                  placeholder="Number of Persons">
-                              </div>
-                              <div class="col-md-6 col-sm-6 col-sx-12">
-                                <input id="phone" name="phone" class="form-control" type="tel" placeholder="Phone No.">
-                              </div>
-                              <div class="col-md-6 col-sm-6 col-sx-12 datepicker">
-                                <input id="date" name="date" class="form-control" id="datetimepicker" placeholder="Date"
-                                  type="text">
-                                <i class="fa fa-calendar"></i>
-                              </div>
+                            <div class="col-md-6 col-sm-6 col-sx-12">
+                              <input id="personnum" name="personnum" class="form-control" type="text"
+                                placeholder="Number of Persons">
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-sx-12">
+                              <input id="phone" name="phone" class="form-control" type="tel" placeholder="Phone No.">
+                            </div>
+                           
+                            <div class="col-md-6 col-sm-6 col-sx-12 datepicker">
+                              <input name="date" class="form-control" id="datetimepicker" placeholder="Date" type="text" >
+                              <i class="fa fa-calendar"></i> </div>
+                          </div>
+                            <div class="col-md-6 col-sm-6 col-sx-12">
+                              <textarea style="width: 100%;min-height: 2.4rem;" class="col-md-6 col-sm-6 col-sx-12"
+                                id="comment" name="comment" placeholder="Message"></textarea>
                             </div>
                           </div>
-                          <!-- End form group -->
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <!-- form group -->
-                        <div class="form-group">
-                          <textarea class="col-md-6 col-sm-6 col-sx-12" style="width: 100rem;margin-left: -3rem;" id="comment" name="comment" placeholder="Message"></textarea>
                         </div>
                         <!-- End form group -->
                       </div>
                     </div>
-                 
-                    </div>
-                    <div class="row element">
-                      <button style="display: block;width: 84%;margin-top:1.5rem;" onclick="sendEmail()" class="btn btn-gold white" name="submit" id="submitBtn"
-                        type="button">BOOK YOUR
-                        TABLE</button>
-                </form>
-                <script>
-                  function sendEmail() {
+                  </div>
 
-                    // Form verilerini al
-                    var templateParams = {
-                      name: document.getElementById('name').value,
-                      email: document.getElementById('email').value,
-                      personnum: document.getElementById('personnum').value,
-                      phone: document.getElementById('phone').value,
-                      date: document.getElementById('date').value,
-                      comment: document.getElementById('comment').value
-                    };
-                    var data = {
-                      service_id: 'service_6loogxi',
-                      template_id: 'template_ablbdvr',
-                      user_id: 'sbdylNAb30gXo4xrL',
-                      template_params: templateParams
-                    };
-                    console.log(data)
-
-                    // EmailJS kullanarak e-posta gönderme
-                    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-                      type: 'POST',
-                      data: JSON.stringify(data),
-                      contentType: 'application/json'
-                    }).then((res) => {
-                      console.log(res);
-                    }).done(function () {
-                      templateParams.name.value = "";
-                      templateParams.email.value = "";
-                      templateParams.personnum.value = "";
-                      templateParams.phone.value = "";
-                      templateParams.date.value = "";
-                      templateParams.comment.value = "";
-                      alert('Your mail is sent!');
-                    }).fail(function (error) {
-                      alert('Oops... ' + JSON.stringify(error));
-                    });
-                  }
-                </script>
-
-                <!-- End reserv home -->
-                <div class="done2">
-                  <strong>Thank you!</strong> We have received your message.
                 </div>
+                <div class="row element">
+                  <button style="display: block;margin-top:1.5rem;" onclick="sendEmail()"
+                    class="btn btn-gold white" name="submit" id="submitBtn" type="button">BOOK YOUR
+                    TABLE</button>
+              </form>
+              <script>
+                function sendEmail() {
+
+                  // Form verilerini al
+                  var templateParams = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    personnum: document.getElementById('personnum').value,
+                    phone: document.getElementById('phone').value,
+                    date:document.getElementsByName('date')[0].value,
+                    comment: document.getElementById('comment').value
+                  };
+                  var data = {
+                    service_id: 'service_6loogxi',
+                    template_id: 'template_ablbdvr',
+                    user_id: 'sbdylNAb30gXo4xrL',
+                    template_params: templateParams
+                  };
+
+                  // EmailJS kullanarak e-posta gönderme
+                  $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+                    type: 'POST',
+                    data: JSON.stringify(data),
+                    contentType: 'application/json'
+                  }).then((res) => {
+                    templateParams.name.value = "";
+                    templateParams.email.value = "";
+                    templateParams.personnum.value = "";
+                    templateParams.phone.value = "";
+                    templateParams.date.value = "";
+                    templateParams.comment.value = "";
+                  }).done(function () {
+                    alert('Your reservation request mail is sent!');
+                  }).fail(function (error) {
+                    alert('Oops... Something went wrong :(');
+                  });
+                }
+              </script>
+
+              <!-- End reserv home -->
+              <div class="done2">
+                <strong>Thank you!</strong> We have received your message.
               </div>
             </div>
-            <!-- End bg transparent -->
           </div>
-          <!-- End Bg Parallax -->
-      </section>
-      <!-- End RESERVATION -->
+          <!-- End bg transparent -->
+        </div>
+        <!-- End Bg Parallax -->
+    </section>
+    <!-- End RESERVATION -->
       <!-- Extra touch Block
     ============================================= -->
       <section style="padding: 60px;" class="extra_touch text-center">

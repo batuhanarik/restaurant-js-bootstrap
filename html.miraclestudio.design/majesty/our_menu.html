@@ -60,18 +60,25 @@
 <body>
   <!-- Loader
     ============================================= -->
-  <div id="loader">
-    <div class="loader-item"> <img src="img/logo_intro.png" alt="">
-      <div class="spinner">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
+    <div id="loader">
+      <div class="loader-item">
+        <span style="display: flex;align-items: center;width: 100%;text-align: center;justify-content: center;">
+          <h3 style="color: black;font-weight: 800;margin-top: 2.8rem;margin-left: 0.1rem;margin-right: 1rem;">Welcome   to  </h3>
+          <img style="margin-left: 0.8rem;margin-top: 1rem;width: 30vw;height: 5vh;" height="40" src="img/logo_laf.png"
+            alt="Laf Bistro & Restaurant">
+        </span>
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
       </div>
+  
     </div>
-  </div>
+    <!-- End Loader -->
   <!-- Document Wrapper
     ============================================= -->
-  <div id="wrapper">
+  <div style="overflow: hidden;" id="wrapper">
     <!-- banner 
     ============================================= -->
     <section class="banner dark">
@@ -86,7 +93,7 @@
                   <h1>Menu</h1>
                   <p>Your Taste is Our Goal</p>
                   <ol class="breadcrumb">
-                    <li><a href="index01.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li>Menu</li>
                   </ol>
                 </div>
@@ -106,12 +113,13 @@
       <div class="container">
         <div class="row">
           <div id="main-menu-trigger"><i class="fa fa-bars"></i></div>
-          <!-- Logo
+   <!-- Logo
                     ============================================= -->
-          <div id="logo"> <a href="index01.html" class="light-logo"><img style="margin-top: 1.5rem;" width="120"
-                height="40" src="img/logo_laf.png" alt="Logo"></a> <a href="index01.html" class="dark-logo"><img
-                height="40" width="120" src="img/logo_laf_dark.png" alt="Logo"></a> </div>
-          <!--End #logo  -->
+                    <div id="logo"> 
+                      <a href="index.html" class="light-logo"><img style="margin-top: 1.5rem;" width="100"
+                          height="40" src="img/logo_laf.png" alt="Logo"></a> <a href="index.html" class="dark-logo">
+                        <img height="40" width="100" src="img/logo_laf.png" alt="Logo"></a> </div>
+                    <!--End #logo  -->
           <!-- Primary Navigation
                     ============================================= -->
           <nav id="main-menu" class="dark">
@@ -405,8 +413,5 @@
     <script src="javascripts/libs/modernizr.js"></script>
     <!-- JS Custom Codes -->
     <script src="javascripts/custom/main.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.js"
-      integrity="sha512-chG05xs95s9mcM5Ip062vUeZryCIztMlQ1bFyxavCcjWCvPj8TB55in4d/2D3qCTDeYbyPjL7xoCMDtgZD5XqQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 </body>
 </html>
