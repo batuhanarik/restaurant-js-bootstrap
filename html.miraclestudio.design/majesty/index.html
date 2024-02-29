@@ -8,7 +8,7 @@
     ============================================= -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Majesty by creative-wp - Responsive HTML5 template">
+  <meta name="description" content="LAF by creative-wp - Responsive HTML5 template">
   <meta name="author" content="creative-wp">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Your Title Page
@@ -57,14 +57,13 @@
   <!-- Loader
     ============================================= -->
   <div id="loader">
-    <div class="loader-item loader-laf-container" >
+    <div class="loader-item loader-laf-container">
       <span style="display: flex;align-items: center;width: 100%;text-align: center;justify-content: center;">
-        <h5 class="loader-laf-h3" style="color: black;font-weight: 800;margin-top: 2.8rem;margin-left: 0.1rem;margin-right: 1rem;">Welcome to
+        <h5 class="loader-laf-h3"
+          style="color: black;font-weight: 800;margin-top: 2.8rem;margin-left: 0.1rem;margin-right: 1rem;">Welcome to
         </h5>
-        <img
-        class="loader-laf-img" 
-        style="margin-left: 0.8rem;margin-top: 1rem;width: 25vw;height: 5vh;" height="40" src="img/logo_laf.png"
-          alt="Laf Bistro & Restaurant">
+        <img class="loader-laf-img" style="margin-left: 0.8rem;margin-top: 1rem;width: 25vw;height: 5vh;" height="40"
+          src="img/logo_laf.png" alt="Laf Bistro & Restaurant">
       </span>
       <div class="spinner">
         <div class="bounce1"></div>
@@ -96,9 +95,9 @@
             </li>
           </ul>
           <!-- End Text Rotater -->
-          <i class="icon-home-ico"></i>
+          <i style="opacity: 0;" class="icon-home-ico"></i>
           <p class="text-uppercase">We Create Sweet Memories</p>
-          <a href="about.html" class="btn btn-gold white">DISCOVER MORE</a>
+          <a href="reservation.html" class="btn btn-gold white">RESERVATION</a>
         </div>
         <!-- End Slider content  -->
       </div>
@@ -112,10 +111,11 @@
           <div id="main-menu-trigger"><i class="fa fa-bars"></i></div>
           <!-- Logo
                     ============================================= -->
-          <div id="logo"> 
-            <a href="index.html" class="light-logo"><img style="margin-top: 1.5rem;" width="100"
-                height="40" src="img/logo_laf.png" alt="Logo"></a> <a href="index.html" class="dark-logo">
-              <img height="40" width="100" src="img/logo_laf.png" alt="Logo"></a> </div>
+          <div id="logo">
+            <a href="index.html" class="light-logo"><img style="margin-top: 1.5rem;" width="100" height="40"
+                src="img/logo_laf.png" alt="Logo"></a> <a href="index.html" class="dark-logo">
+              <img height="40" width="100" src="img/logo_laf.png" alt="Logo"></a>
+          </div>
           <!--End #logo  -->
           <!-- Primary Navigation
                     ============================================= -->
@@ -171,7 +171,7 @@
                 <span class="welcome">Welcome to LAF Bistro</span>
               </div>
               <!-- End# Head Title -->
-              <p>Majesty is a team work of Majesty Restaurant Cafe, we aim at promoting the foodstuff industry through
+              <p>Laf is a team work of Laf Bistro & Restaurant, we aim at promoting the foodstuff industry through
                 the branches , we establish and through the new dishes. and integrate between different cultures.</p>
               <a href="about.html" class="btn btn-gold">READ MORE</a>
             </div>
@@ -316,8 +316,17 @@
             <div class="container">
               <h1>WE CREATE DELICOUS MEMORIES</h1>
               <p class="text-uppercase">You can promote your creative parallax effects</p>
-              <a href="about.html" class="btn btn-gold white">DISCOVER MORE</a>
+              <a onclick="goGallery()" class="btn btn-gold white">GALLERY</a>
             </div>
+            <script>
+              function goGallery() {
+                window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'  // Animasyonlu geçiş için 'smooth' kullanılır
+    });
+              
+              }
+            </script>
           </div>
           <!-- End Bg transparent -->
         </div>
@@ -469,7 +478,7 @@
               <span>44 High Road Willesden Green, London - NW10 2QA</span>
               <!-- <p class="mt30">Call for Reservations:<span >(001) 123-4567</span></p> -->
               <p>E-mail: <span>lafbistro@gmail.com</span> </p>
-              <ul style="text-align: center;" class="social mt30">
+              <ul class="social mt30">
                 <!-- <li><a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
             <li><a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li> -->
                 <li><a href="mailto:lafbistro@gmail.com" data-toggle="tooltip" title="Email"><i
