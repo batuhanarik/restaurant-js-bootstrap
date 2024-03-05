@@ -56,15 +56,25 @@
 <body>
   <!-- Loader
     ============================================= -->
-  <div id="loader">
+  <!-- <div id="loader">
     <div class="loader-item loader-laf-container">
       <span style="display: flex;align-items: center;width: 100%;text-align: center;justify-content: center;">
         <h5 class="loader-laf-h3"
           style="color: black;font-weight: 800;margin-top: 2.8rem;margin-left: 0.1rem;margin-right: 1rem;">Welcome to
         </h5>
         <img class="loader-laf-img" style="margin-left: 0.8rem;margin-top: 1rem;width: 25vw;height: 5vh;" height="40"
-          src="img/logo_laf.png" alt="Laf Bistro & Restaurant">
+          src="img/logo_laf.png" alt="Laf Bistro Restaurant">
       </span>
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+  </div> -->
+
+  <div id="loader">
+    <div class="loader-item"> <img width="90" height="45" src="img/logo_laf.png" alt="">
       <div class="spinner">
         <div class="bounce1"></div>
         <div class="bounce2"></div>
@@ -83,7 +93,7 @@
         <!-- Slider content -->
         <div class="slider-content">
           <!-- Text Rotater -->
-          <ul id="fade">
+          <ul style="margin-top: rem;" id="fade">
             <li>
               <h1>Come in & Taste</h1>
             </li>
@@ -112,9 +122,9 @@
           <!-- Logo
                     ============================================= -->
           <div id="logo">
-            <a href="index.html" class="light-logo"><img style="margin-top: 1.5rem;" width="100" height="40"
+            <a href="index.html" class="light-logo"><img style="margin-top: 1.5rem;" width="80" height="30"
                 src="img/logo_laf.png" alt="Logo"></a> <a href="index.html" class="dark-logo">
-              <img height="40" width="100" src="img/logo_laf.png" alt="Logo"></a>
+              <img height="30" width="80" src="img/logo_laf.png" alt="Logo"></a>
           </div>
           <!--End #logo  -->
           <!-- Primary Navigation
@@ -171,7 +181,7 @@
                 <span class="welcome">Welcome to LAF Bistro</span>
               </div>
               <!-- End# Head Title -->
-              <p>Laf is a team work of Laf Bistro & Restaurant, we aim at promoting the foodstuff industry through
+              <p>Laf is a team work of Laf Bistro Restaurant, we aim at promoting the foodstuff industry through
                 the branches , we establish and through the new dishes. and integrate between different cultures.</p>
               <a href="about.html" class="btn btn-gold">READ MORE</a>
             </div>
@@ -236,8 +246,7 @@
                                 <i class="fa fa-calendar"></i>
                               </div>
                               <div class="col-md-6 col-sm-6 col-sx-12">
-                                <textarea style="width: 100%;min-height: 2.4rem;" class="col-md-6 col-sm-6 col-sx-12"
-                                  id="comment" name="comment" placeholder="Message"></textarea>
+                                <input id="comment" name="comment" class="form-control" type="text" placeholder="Message">
                               </div>
                             </div>
                           </div>
@@ -321,10 +330,10 @@
             <script>
               function goGallery() {
                 window.scrollTo({
-        top: document.body.scrollHeight,
-        behavior: 'smooth'  // Animasyonlu geçiş için 'smooth' kullanılır
-    });
-              
+                  top: document.body.scrollHeight,
+                  behavior: 'smooth'
+                });
+
               }
             </script>
           </div>
@@ -340,11 +349,11 @@
           <div style="display: flex; justify-content: center;" class="row">
             <!-- Menu Item -->
             <div class="menu-item col-md-4 col-sm-4 col-xs-12">
-              <figure> <img class="img-responsive" src="img/block1.jpg" alt="RELAXING AMBIENCE" />
+              <figure> <img class="img-responsive" src="img/cocktail_1.jpg" alt="RELAXING AMBIENCE" />
                 <figcaption class="text-center">
                   <div class="fig_container">
-                    <h3>RELAXING AMBIENCE</h3>
-                    <p>Creating good mood</p>
+                    <h4>Any 2 same cocktail</h4>
+                    <p>10 Pound</p>
                   </div>
                 </figcaption>
               </figure>
@@ -355,9 +364,8 @@
               <figure> <img class="img-responsive" src="img/block2.jpg" alt="RELAXING AMBIENCE" />
                 <figcaption class="text-center">
                   <div class="fig_container">
-                    <h3>SUNDAY</h3>
-                    <p>We Open</p>
-                  </div>
+                    <h4>We Open</h4>
+                    <p>Making Every Moment Count</p>
                 </figcaption>
               </figure>
             </div>
@@ -474,7 +482,7 @@
             <!-- Our location !-->
             <div class="col-md-3 col-sm-6 col-xs-12 our_location">
               <h3>Our Location</h3>
-              <p>Laf Bistro & Restaurant:</p>
+              <p>Laf Bistro Restaurant:</p>
               <span>44 High Road Willesden Green, London - NW10 2QA</span>
               <!-- <p class="mt30">Call for Reservations:<span >(001) 123-4567</span></p> -->
               <p>E-mail: <span>lafbistro@gmail.com</span> </p>
@@ -494,35 +502,35 @@
               <ul>
                 <li>
                   <p>Monday
-                    <time datetime="00:01">9 am - 11 pm</time>
+                    <time datetime="00:01">11 am - 11 pm</time>
                   </p>
                 </li>
                 <li>
                   <p>Tuesday
-                    <time datetime="00:01">9 am - 11 pm</time>
+                    <time datetime="00:01">11 am - 11 pm</time>
                   </p>
                 </li>
                 <li>
                   <p>Wednesday
-                    <time datetime="00:01">9 am - 11 pm</time>
+                    <time datetime="00:01">11 am - 11 pm</time>
                   </p>
                 </li>
                 <li>
                   <p>Thursday
-                    <time datetime="00:01">9 am - 11 pm</time>
+                    <time datetime="00:01">11 am - 11 pm</time>
                   </p>
                 </li>
                 <li>
                   <p>Friday
-                    <time datetime="00:01">9 am - 11 pm</time>
+                    <time datetime="00:01">11 am - 11 pm</time>
                   </p>
                 </li>
                 <li>
-                  <p>Saturday <time datetime="00:01">9 am - 11 pm</time></p>
+                  <p>Saturday <time datetime="00:01">11 am - 11 pm</time></p>
                 </li>
                 <li>
                   <p>Sunday
-                    <time datetime="00:01">9 am - 11 pm</time>
+                    <time datetime="00:01">11 am - 11 pm</time>
                   </p>
                 </li>
               </ul>
