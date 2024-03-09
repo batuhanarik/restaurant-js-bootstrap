@@ -288,24 +288,29 @@
                       user_id: 'sbdylNAb30gXo4xrL',
                       template_params: templateParams
                     };
-
-                    $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-                      type: 'POST',
-                      data: JSON.stringify(data),
-                      contentType: 'application/json'
-                    }).done(function () {
-                      alert('Your reservation request mail is sent! Thank you :)');
-                      event.preventDefault();
-                      templateParams.name.value = "";
-                      templateParams.email.value = "";
-                      templateParams.personnum.value = "";
-                      templateParams.phone.value = "";
-                      templateParams.date.value = "";
-                      templateParams.comment.value = "";
-                    }).fail(function (error) {
-                      alert('Oops... Something went wrong :(');
-                    });
+                    if (templateParams.name.length > 0 && templateParams.email.length > 0 && templateParams.personnum.length > 0 && templateParams.phone.length > 0 && templateParams.date.length > 0 && templateParams.comment.length > 0) {
+                      $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+                        type: 'POST',
+                        data: JSON.stringify(data),
+                        contentType: 'application/json'
+                      }).done(function () {
+                        alert('Your reservation request mail is sent! Thank you :)');
+                        event.preventDefault();
+                        templateParams.name.value = "";
+                        templateParams.email.value = "";
+                        templateParams.personnum.value = "";
+                        templateParams.phone.value = "";
+                        templateParams.date.value = "";
+                        templateParams.comment.value = "";
+                      }).fail(function (error) {
+                        alert('Oops... Something went wrong :(');
+                      });
+                    } else {
+                      alert("All Fields are Required.")
+                    }
                   }
+
+
                 </script>
                 <!-- End reserv home -->
                 <div class="done2">
